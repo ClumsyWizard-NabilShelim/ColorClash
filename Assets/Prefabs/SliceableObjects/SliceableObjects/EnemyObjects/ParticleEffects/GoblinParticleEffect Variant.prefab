@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &577668921127892384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7435434106791609956, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: ParticleSeed
+      value: 668580601
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005681, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005682, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: randomSeed
+      value: 668580601
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005682, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.24705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005682, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.77647066
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005682, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.54901963
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381703714482005684, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: m_Name
+      value: GoblinParticleEffect Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160632680704937253, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+      propertyPath: randomSeed
+      value: 668580601
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+--- !u!1 &8959209748974654228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8381703714482005684, guid: 1baa253b5778eb94abb2e05e5774b7dc, type: 3}
+  m_PrefabInstance: {fileID: 577668921127892384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4119072008134019998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8959209748974654228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f91b45f6aad12442b171c4b544d1d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - <Name>k__BackingField: Die
+    <Audio>k__BackingField: {fileID: 8300000, guid: 0af4ecc2be425ed4f9064943fb541ea2, type: 3}
+    <Volume>k__BackingField: 0.5
+    <Loop>k__BackingField: 0
+    <PlayOnAwake>k__BackingField: 1

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5909968a34d34c44e9890888f80e8750, type: 3}
+  m_Name: PatchUp
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Patch Up
+  <Description>k__BackingField: 'Heals +<EFFECTVALUE>.
+
+
+    Cool Down: <COOLDOWN>
+    s'
+  <Cost>k__BackingField: 2500
+  <Icon>k__BackingField: {fileID: -213878685, guid: fe47c128907958e4281250059dce500d, type: 3}
+  <Type>k__BackingField: 0
+  levels: 1
+  duration: 0
+  coolDownDuration: 180
+  effectValue: 1
+  effectIncreasePerLevel: 0
+  <AudioClip>k__BackingField: {fileID: 8300000, guid: 2e992300f42955042b71a69ed81ad570, type: 3}

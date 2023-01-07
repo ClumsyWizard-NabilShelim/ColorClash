@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8239537151357276658
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5273931485171313277, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: feedback
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273931485171313277, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: deathSprite
+      value: 
+      objectReference: {fileID: 1752788368, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}
+    - target: {fileID: 5273931485171313277, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: particleEffect
+      value: 
+      objectReference: {fileID: 8959209748974654228, guid: 6313663f09b866b46a98e6921b6c0ab3, type: 3}
+    - target: {fileID: 5990224854158867639, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: sounds.Array.data[0].<Audio>k__BackingField
+      value: 
+      objectReference: {fileID: 8300000, guid: 48d53750ed13bfa45a40f547d64c9fe9, type: 3}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731849, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Name
+      value: ESO_Bird Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1966666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9312879
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1384480815, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+--- !u!1 &640697809474174395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8844084647510731849, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+  m_PrefabInstance: {fileID: 8239537151357276658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6411797100732400838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640697809474174395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7424e1c3880ea714f9fd42b8f28e4dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockEffectPrefab: {fileID: 4870762156764957311, guid: 02d0808d657c39f47928e404c6b69a98, type: 3}

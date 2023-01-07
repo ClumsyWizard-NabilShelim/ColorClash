@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Arenas
+  m_EditorClassIdentifier: 
+  m_GroupName: Arenas
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 934a488b2ebb3df4e83b11e865b4b54e
+  m_SerializeEntries:
+  - m_GUID: fda03f023c9fa9d4ab51ee39f6b61f09
+    m_Address: Antartica
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Arena
+  - m_GUID: 416ba73e3b0776a49a626b05634bd7c9
+    m_Address: Forest
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Arena
+  - m_GUID: ec721a5e805c12a43b899389276e284f
+    m_Address: Lava
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Arena
+  - m_GUID: d5fea1016fd16b146903d819e8b7d7f3
+    m_Address: Sky
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Arena
+  - m_GUID: 40b82084787963e429335ee3332967a4
+    m_Address: Space
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Arena
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f827f932b32fef5458a88564157c97ed, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fdf76d55d2e6aad4fbe9ade9b6f85006, type: 2}
+    - {fileID: 11400000, guid: 0c26a78b39381a343bdd9a2ff34e5360, type: 2}

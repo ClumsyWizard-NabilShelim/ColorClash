@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: PowerUps
+  m_EditorClassIdentifier: 
+  m_GroupName: PowerUps
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0340a68b9a389294189abec4d8369774
+  m_SerializeEntries:
+  - m_GUID: 8a03767d391a75c49801d5b01be120ba
+    m_Address: BuyTime
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PowerUp
+  - m_GUID: 7fb9355743f4000488e178a1c4b4be5d
+    m_Address: CoinRush
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PowerUp
+  - m_GUID: 4f3cd3f5dde46dc449ecabea093611c2
+    m_Address: ColorBomb
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PowerUp
+  - m_GUID: a95b24f97a010b640a13c6ee0c7d3794
+    m_Address: IceBreath
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PowerUp
+  - m_GUID: e0216d9e48fbcfe46be4e90f191814a4
+    m_Address: InhumanReflex
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PowerUp
+  - m_GUID: 75cbba48e0f844b49a9850c63cb57545
+    m_Address: PatchUp
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PowerUp
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f827f932b32fef5458a88564157c97ed, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 883144888998cb749b9bedafab016872, type: 2}
+    - {fileID: 11400000, guid: 173425b6d4cd0084e9337704d265ab84, type: 2}

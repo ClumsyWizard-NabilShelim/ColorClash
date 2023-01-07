@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22aa67d018dd7a74ea1e98d36d3dba16, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Space
+  <Description>k__BackingField: The vast emptiness of space holds many secrets! One
+    of them being those pesky aliens who take away from your already very short and
+    limited time! Not to worry though, you get a 1.5x coin and score multiplier.
+  <Cost>k__BackingField: 40000
+  <Icon>k__BackingField: {fileID: 21300000, guid: d8cdf5fdf7e307c4d9e22ac905cae68a, type: 3}
+  <Type>k__BackingField: 3
+  <Index>k__BackingField: 5
+  <EnemyIcon>k__BackingField: {fileID: 1963618171, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}

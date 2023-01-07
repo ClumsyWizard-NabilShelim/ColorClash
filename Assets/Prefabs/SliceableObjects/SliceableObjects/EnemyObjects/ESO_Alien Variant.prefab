@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8239537151357276658
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5273931485171313277, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: deathSprite
+      value: 
+      objectReference: {fileID: -323501528, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}
+    - target: {fileID: 5273931485171313277, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: particleEffect
+      value: 
+      objectReference: {fileID: 8959209748974654228, guid: a01e8b49a7f8aef499b1fee3c933cf58, type: 3}
+    - target: {fileID: 5990224854158867639, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: sounds.Array.data[0].<Audio>k__BackingField
+      value: 
+      objectReference: {fileID: 8300000, guid: 68dbbc8cdf657cc49834e82ef98d7a20, type: 3}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731848, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084647510731849, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Name
+      value: ESO_Alien Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5066667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Size.y
+      value: 2.174298
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1963618171, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}
+    - target: {fileID: 8844084648376953614, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+--- !u!1 &640697809474174395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8844084647510731849, guid: e0b2780edd18f604985e08a7c1755e97, type: 3}
+  m_PrefabInstance: {fileID: 8239537151357276658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6311057699267908995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640697809474174395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a7b06346c2e6c4e88e3d2258c4567b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeDecreaseAmount: 30

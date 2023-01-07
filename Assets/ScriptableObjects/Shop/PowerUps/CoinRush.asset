@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5909968a34d34c44e9890888f80e8750, type: 3}
+  m_Name: CoinRush
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Coin Rush
+  <Description>k__BackingField: 'Earn double coin for <DURATION>s.
+
+
+    Cool Down:
+    <COOLDOWN>s'
+  <Cost>k__BackingField: 500
+  <Icon>k__BackingField: {fileID: -1089822811, guid: fe47c128907958e4281250059dce500d, type: 3}
+  <Type>k__BackingField: 0
+  levels: 5
+  duration: 15
+  coolDownDuration: 180
+  effectValue: 0
+  effectIncreasePerLevel: 0
+  <AudioClip>k__BackingField: {fileID: 8300000, guid: 71c82599d3fd12244b44d37b6f4508be, type: 3}

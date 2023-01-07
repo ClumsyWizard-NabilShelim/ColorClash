@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22aa67d018dd7a74ea1e98d36d3dba16, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Forest
+  <Description>k__BackingField: 'Every adventure starts in the forest. Look out for
+    Goblins, who will steal your coin if you don''t slice them first! '
+  <Cost>k__BackingField: 0
+  <Icon>k__BackingField: {fileID: 21300000, guid: 85932dc477b47234aac3b7c6e627eb2c, type: 3}
+  <Type>k__BackingField: 3
+  <Index>k__BackingField: 1
+  <EnemyIcon>k__BackingField: {fileID: 1445607347, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}

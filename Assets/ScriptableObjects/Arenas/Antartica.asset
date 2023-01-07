@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22aa67d018dd7a74ea1e98d36d3dba16, type: 3}
+  m_Name: Antartica
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Antartica
+  <Description>k__BackingField: It does not get better than the blood-freezing temperatures.
+    But watch out for the ice monsters! They will freeze your power-ups and your
+    finance! Not to worry though, you get a 1.3x coin and score multiplier
+  <Cost>k__BackingField: 30000
+  <Icon>k__BackingField: {fileID: 21300000, guid: 5244ebeca8da8c64ab13f859f7a672be, type: 3}
+  <Type>k__BackingField: 3
+  <Index>k__BackingField: 3
+  <EnemyIcon>k__BackingField: {fileID: 1536723718, guid: 7552267a2f4229e4080a5c594b901cf9, type: 3}

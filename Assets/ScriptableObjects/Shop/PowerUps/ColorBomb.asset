@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5909968a34d34c44e9890888f80e8750, type: 3}
+  m_Name: ColorBomb
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Color Bomb
+  <Description>k__BackingField: 'Turns all the shapes into the same color.
+
+
+    Duration:
+    <DURATION>s.
+
+    Cool Down: <COOLDOWN>s'
+  <Cost>k__BackingField: 1500
+  <Icon>k__BackingField: {fileID: -1054848574, guid: fe47c128907958e4281250059dce500d, type: 3}
+  <Type>k__BackingField: 0
+  levels: 5
+  duration: 5
+  coolDownDuration: 240
+  effectValue: 0
+  effectIncreasePerLevel: 0
+  <AudioClip>k__BackingField: {fileID: 8300000, guid: 28065f33b9a5db34daaa834d4ff7c988, type: 3}
