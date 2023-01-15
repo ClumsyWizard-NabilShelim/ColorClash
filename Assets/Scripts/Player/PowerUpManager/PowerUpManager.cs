@@ -99,11 +99,12 @@ public class PowerUpManager : Singleton<PowerUpManager>
 
     private void FadeVignette()
     {
-        if(vignette.mode.value == VignetteMode.Classic)
+        if (vignette.mode.value == VignetteMode.Classic)
         {
             vignette.intensity.value -= Time.deltaTime * 5.0f;
             if (vignette.intensity.value <= 0.05f)
             {
+                vignette.intensity.value = 0.0f;
                 Instance.vignette.active = false;
                 CancelInvoke("FadeVignette");
             }
@@ -111,8 +112,9 @@ public class PowerUpManager : Singleton<PowerUpManager>
         else
         {
             vignette.opacity.value -= Time.deltaTime * 5.0f;
-            if (vignette.intensity.value <= 0.05f)
+            if (vignette.opacity.value <= 0.05f)
             {
+                vignette.opacity.value = 0.0f;
                 Instance.vignette.active = false;
                 CancelInvoke("FadeVignette");
             }

@@ -20,6 +20,15 @@ public class ArenaManager : MonoBehaviour
                 Instantiate(arenaSlot, slotHolder).GetComponent<ArenaSlot>().Initialize(data[i]);
             }
         });
+
+        AdsManager.GetAd(AdType.Banner, (BannerAds ad) =>
+        {
+            ad.Setup(() =>
+            {
+                ad.Show();
+            },
+            UnityEngine.Advertisements.BannerPosition.BOTTOM_CENTER);
+        });
     }
     
     public void Back()

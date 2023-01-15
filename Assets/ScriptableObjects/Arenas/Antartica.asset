@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22aa67d018dd7a74ea1e98d36d3dba16, type: 3}
   m_Name: Antartica
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Antartica
+  <Name>k__BackingField: Arctic
   <Description>k__BackingField: It does not get better than the blood-freezing temperatures.
     But watch out for the ice monsters! They will freeze your power-ups and your
     finance! Not to worry though, you get a 1.3x coin and score multiplier

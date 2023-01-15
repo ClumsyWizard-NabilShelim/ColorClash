@@ -9,7 +9,8 @@ public enum SaveLoadKey
 {
 	PlayerData,
 	PlayerStats,
-	Settings
+	Settings,
+	Tutorial
 }
 
 public class SaveLoadManager : Persistant<SaveLoadManager>

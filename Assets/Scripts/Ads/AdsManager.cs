@@ -36,16 +36,14 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
     {
         base.Awake();
 
-        if (Debug.isDebugBuild)
-            testMode = true;
-        else
-            testMode = false;
-
         #if UNITY_EDITOR
              testMode = true;
-        #else
-            testMode = false;
-        #endif
+#else
+            if(Application.platform == RuntimePlatform.Android)
+                testMode = false;
+            else
+                testMode = true; 
+#endif
 
         Advertisement.Initialize(gameID, testMode, this);
 
@@ -55,6 +53,14 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
         }
 
         SaveLoadManager.SetInt(AdsSaveTags.LevelChangeCoolDown.ToString(), interstitialADCooldown);
+
+        SceneManagement.OnNewSceneLoadedCore += () =>
+        {
+            if (SceneManagement.isGameScene)
+                ((BannerAds)ads[AdType.Banner]).Hide();
+            else
+                ((BannerAds)ads[AdType.Banner]).Show();
+        };
     }
 
     //Initialization
@@ -78,6 +84,7 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
 
     public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
     {
+        ads[adIDs[placementId]].OnAdFailedToLoad();
         Debug.Log($"Error loading Ad Unit: {placementId} - {error} - {message}");
     }
 

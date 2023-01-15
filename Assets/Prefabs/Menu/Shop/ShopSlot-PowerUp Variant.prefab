@@ -27,10 +27,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2363638883465839623, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -15.0000305
-      objectReference: {fileID: 0}
     - target: {fileID: 2708387180099139675, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
       propertyPath: m_Name
       value: ShopSlot-PowerUp Variant
@@ -62,14 +58,6 @@ PrefabInstance:
     - target: {fileID: 2882355933699766468, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2890753349574440578, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 139.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2890753349574440578, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -69.70001
       objectReference: {fileID: 0}
     - target: {fileID: 4068015773026381152, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
       propertyPath: m_SizeDelta.x
@@ -106,14 +94,6 @@ PrefabInstance:
     - target: {fileID: 6816893803782743353, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816893803782743353, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 450
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816893803782743353, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 6816893803782743353, guid: 4657a2d7b86379b4d99bf5befdb79caa, type: 3}
       propertyPath: m_LocalPosition.x

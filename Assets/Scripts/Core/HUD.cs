@@ -42,4 +42,9 @@ public class HUD : Singleton<HUD>
     {
         Instance.coin.text = PlayerDataManager.PlayerData.Coin.ToString();
     }
+
+    public void Settings()
+    {
+        SettingsMenu.Open();
+    }
 }

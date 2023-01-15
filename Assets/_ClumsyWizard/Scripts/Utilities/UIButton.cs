@@ -30,7 +30,6 @@ namespace ClumsyWizard.Utilities
         public void OnClick()
         {
             audioManager.Play("Click");
-
         }
 
         public void OnPointerUp(PointerEventData eventData)

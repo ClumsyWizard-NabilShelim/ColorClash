@@ -164,7 +164,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - <Name>k__BackingField: Effect
-    <Audio>k__BackingField: {fileID: 8300000, guid: a9cef63762cc0d945bc1ca154f588cb7, type: 3}
+    <Audio>k__BackingField: {fileID: 8300000, guid: 71c82599d3fd12244b44d37b6f4508be, type: 3}
     <Volume>k__BackingField: 1
     <Loop>k__BackingField: 0
     <PlayOnAwake>k__BackingField: 1
+  isBackgroundMusic: 0

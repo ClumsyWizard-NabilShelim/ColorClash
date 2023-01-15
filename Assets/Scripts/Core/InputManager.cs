@@ -12,10 +12,20 @@ public enum InputType
 
 public class InputManager : Persistant<InputManager>
 {
-    [SerializeField] private InputType inputType;
+    private InputType inputType;
     public static List<Vector2> PointerWorldPositions { get; private set; } = new List<Vector2>();
     public static bool IsPointerMoving { get; private set; }
     private Action onSignificantPointerMove;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        if (Application.platform == RuntimePlatform.Android)
+            inputType = InputType.Touch;
+        else
+            inputType = InputType.MouseAndKeyboard;
+    }
 
     private void Update()
     {

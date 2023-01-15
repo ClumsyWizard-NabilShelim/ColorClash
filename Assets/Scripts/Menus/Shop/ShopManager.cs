@@ -22,6 +22,15 @@ public class ShopManager : MonoBehaviour
         tabContainers[0].SetActive(true);
         SetupPowerUpShop();
         SetupUpgradesShop();
+
+        AdsManager.GetAd(AdType.Banner, (BannerAds ad) =>
+        {
+            ad.Setup(() =>
+            {
+                ad.Show();
+            },
+            UnityEngine.Advertisements.BannerPosition.BOTTOM_CENTER);
+        });
     }
 
     private void SetupPowerUpShop()

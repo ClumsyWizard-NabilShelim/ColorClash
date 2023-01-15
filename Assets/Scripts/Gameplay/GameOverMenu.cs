@@ -34,6 +34,14 @@ public class GameOverMenu : Singleton<GameOverMenu>
                 Instance.doubleScoreButton.interactable = true;
             });
         });
+
+        AdsManager.GetAd(AdType.Interstitial, (InterstitialAds ad) =>
+        {
+            ad.Setup(null, () =>
+            {
+                SaveLoadManager.SetInt(AdsSaveTags.LevelChangeCoolDown.ToString(), AdsManager.InterstitialADCooldown + 1);
+            });
+        });
     }
 
     public static void Over(int score, int coin, bool isHighScore)
@@ -61,6 +69,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
     public void DoubleCoin()
     {
         doubleCoinButton.interactable = false;
+        doubleScoreButton.interactable = false;
         AdsManager.GetAd(AdType.Rewareded, (RewardedAds ad) =>
         {
             ad.Show(
@@ -73,12 +82,14 @@ public class GameOverMenu : Singleton<GameOverMenu>
                 () =>
                 {
                     doubleCoinButton.interactable = true;
+                    doubleScoreButton.interactable = true;
                 }
             );
         });
     }
     public void DoubleScore()
     {
+        doubleCoinButton.interactable = false;
         doubleScoreButton.interactable = false;
         AdsManager.GetAd(AdType.Rewareded, (RewardedAds ad) =>
         {
@@ -92,6 +103,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
                 },
                 () =>
                 {
+                    doubleCoinButton.interactable = true;
                     doubleScoreButton.interactable = true;
                 }
             );
@@ -104,10 +116,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
         {
             AdsManager.GetAd(AdType.Interstitial, (InterstitialAds ad) =>
             {
-                ad.Show(() =>
-                {
-                    SaveLoadManager.SetInt(AdsSaveTags.LevelChangeCoolDown.ToString(), AdsManager.InterstitialADCooldown + 1);
-                });
+                ad.Show();
             });
         }
         else

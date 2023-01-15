@@ -130,34 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 635688963, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.55407804
-      objectReference: {fileID: 0}
-    - target: {fileID: 635688963, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.55407804
-      objectReference: {fileID: 0}
-    - target: {fileID: 635688963, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 635688965, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_Size.x
-      value: 29.491203
-      objectReference: {fileID: 0}
-    - target: {fileID: 635688965, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_Size.y
-      value: 10.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 635688965, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_DrawMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 635688965, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8398641839895013674, guid: 7365f920b473f524fa3643640f1be16a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -402,11 +374,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1140901517, guid: a7a3710160a293844b674bac7f551e3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.25
+      value: 3.25
       objectReference: {fileID: 0}
     - target: {fileID: 1994731757, guid: a7a3710160a293844b674bac7f551e3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.25
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 4298118278980991783, guid: a7a3710160a293844b674bac7f551e3a, type: 3}
       propertyPath: m_RootOrder

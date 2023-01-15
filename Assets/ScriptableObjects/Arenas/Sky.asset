@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22aa67d018dd7a74ea1e98d36d3dba16, type: 3}
   m_Name: Sky
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Sky
+  <Name>k__BackingField: Clouds
   <Description>k__BackingField: The sky is a very calm place to be until birds come
     along! Watch out for birds! Slice them before they block your view with their
     shi..... Not to worry though, you get a 1.2x coin and score multiplier.

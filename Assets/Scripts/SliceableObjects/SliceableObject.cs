@@ -67,7 +67,14 @@ public abstract class SliceableObject : MonoBehaviour
     protected virtual void Fall()
     {
         if (isFrozen)
+        {
+            collider.isTrigger = false;
             return;
+        }
+        else
+        {
+            collider.isTrigger = true;
+        }
 
         rb.gravityScale = defaultGravityScale * GameManager.FallGravityMultiplier;
     }

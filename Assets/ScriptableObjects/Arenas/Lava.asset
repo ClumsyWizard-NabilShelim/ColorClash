@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22aa67d018dd7a74ea1e98d36d3dba16, type: 3}
   m_Name: Lava
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Lava
+  <Name>k__BackingField: Lava Land
   <Description>k__BackingField: Had enough of the cold? Jump right into hell! It's
     not so bad here, just watch out for the fire demons, they will burn away your
     score! Not to worry though, you get a 1.4x coin and score multiplier.

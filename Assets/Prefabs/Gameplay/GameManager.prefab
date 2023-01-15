@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minUnFreezeDelay: 0.2
-  maxUnFreezeDelya: 1
+  maxUnFreezeDelya: 1.2
   timeToMinUnFreezeDelay: 2
   fallGravityMultiplier: 10
   coinMultiplier: 1

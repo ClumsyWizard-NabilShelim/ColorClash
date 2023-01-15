@@ -8,10 +8,10 @@ public class InterstitialAds : AdContainer
 {
     protected Action onAdDisplayed;
 
-    public void Show(Action onAdDisplayed)
+    public void Setup(Action onAdLoaded, Action onAdDisplayed)
     {
+        base.Setup(onAdLoaded);
         this.onAdDisplayed += onAdDisplayed;
-        Advertisement.Load(id, adsManager);
     }
 
     public override void OnAdWatched(UnityAdsShowCompletionState showCompletionState) { }
@@ -22,9 +22,13 @@ public class InterstitialAds : AdContainer
     {
         onAdDisplayed?.Invoke();
     }
-
+    public override void OnAdFailedToLoad()
+    {
+        onAdDisplayed?.Invoke();
+    }
     protected override void CleanUp()
     {
+        base.CleanUp();
         onAdDisplayed = null;
     }
 }

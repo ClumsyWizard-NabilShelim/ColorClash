@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 395432075086328734}
   - component: {fileID: 7384704126184901919}
   - component: {fileID: 99966939634238336}
+  - component: {fileID: 3625195740088657553}
   m_Layer: 0
   m_Name: ADSManager
   m_TagString: Untagged
@@ -47,19 +48,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameID: 5108204
-  testMode: 1
   adIDs:
     entries:
     - key: Interstitial_Android
       value: 0
     - key: Rewarded_Android
       value: 1
+    - key: Banner_Android
+      value: 2
   ads:
     entries:
     - key: 0
       value: {fileID: 7384704126184901919}
     - key: 1
       value: {fileID: 99966939634238336}
+    - key: 2
+      value: {fileID: 3625195740088657553}
   interstitialADCooldown: 3
 --- !u!114 &7384704126184901919
 MonoBehaviour:
@@ -83,5 +87,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1c9d12b04218c944b3d323e86dcd8a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3625195740088657553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395432075086328735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9869b1291dae66b45b579e9a7afbba28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

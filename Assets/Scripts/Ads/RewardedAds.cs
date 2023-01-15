@@ -8,23 +8,12 @@ public class RewardedAds : AdContainer
 {
     protected Action onRewardAdWatched;
     protected Action onRewardAdCancelled;
-    protected Action onAdLoaded;
 
-    public void Setup(Action onAdLoaded)
-    {
-        this.onAdLoaded += onAdLoaded;
-        Advertisement.Load(id, adsManager);
-    }
     public void Show(Action onRewardAdWatched, Action onRewardAdCancelled)
     {
         this.onRewardAdWatched += onRewardAdWatched;
         this.onRewardAdCancelled += onRewardAdCancelled;
-        base.OnAdLoaded();
-    }
-
-    public override void OnAdLoaded()
-    {
-        onAdLoaded?.Invoke();
+        Show();
     }
 
     public override void OnAdWatched(UnityAdsShowCompletionState showCompletionState)
@@ -37,10 +26,15 @@ public class RewardedAds : AdContainer
 
     public override void OnAdClick() { }
     public override void OnAdShow() { }
+    public override void OnAdFailedToLoad()
+    {
+        onRewardAdCancelled?.Invoke();
+    }
 
     protected override void CleanUp()
     {
+        base.CleanUp();
         onRewardAdWatched = null;
-        onAdLoaded = null;
+        onRewardAdCancelled = null;
     }
 }

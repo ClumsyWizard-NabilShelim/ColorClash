@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 355295b4ee1ac5d43b3ec9bff7851a0b
   - enabled: 1
-    path: Assets/Scenes/Level_Forest.unity
+    path: Assets/Scenes/Level_Woods.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level_Antartica.unity
+    path: Assets/Scenes/Level_Arctic.unity
     guid: 8c3229a422b4d8e4299c6d87f388bb16
   - enabled: 1
-    path: Assets/Scenes/Level_Lava.unity
+    path: Assets/Scenes/Level_LavaLand.unity
     guid: 4dc57729f393e1f479ca1ada8fdc4e72
   - enabled: 1
-    path: Assets/Scenes/Level_Sky.unity
+    path: Assets/Scenes/Level_Clouds.unity
     guid: 0b09bc9da58d2e54f89bec8176fae2ab
   - enabled: 1
     path: Assets/Scenes/Level_Space.unity
@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 795b757085c901748b1594f0d1094cf8
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 570116a3dabad1742b3c4fedf7af2d5a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f7ffd83c2b005784e8b5a8867965ab40, type: 2}
