@@ -1,14 +1,17 @@
+using ClumsyWizard.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopManager : MonoBehaviour
+public class ShopManager : Singleton<ShopManager>
 {
     [SerializeField] private GameObject[] tabContainers;
     [SerializeField] private GameObject upgradeSlotPrefab;
     [SerializeField] private GameObject powerUpSlotPrefab;
     [SerializeField] private Transform powerUpsContainer;
     [SerializeField] private Transform upgradesContainer;
+    private int powerUpsCount;
+    private int upgradesCount;
 
     private int slotIndex;
 
@@ -37,6 +40,7 @@ public class ShopManager : MonoBehaviour
     {
         AssetLoader.LoadAssetsByTag("PowerUp", (List<PowerUpShopItemData> datas) =>
         {
+            powerUpsCount = datas.Count;
             foreach (PowerUpShopItemData data in datas)
             {
                 ShopSlotPowerUp shopSlotPowerUp = Instantiate(powerUpSlotPrefab, powerUpsContainer).GetComponent<ShopSlotPowerUp>();
@@ -49,6 +53,7 @@ public class ShopManager : MonoBehaviour
     {
         AssetLoader.LoadAssetsByTag("Upgrade", (List<UpgradeShopItemData> datas) =>
         {
+            upgradesCount = datas.Count;
             foreach (UpgradeShopItemData data in datas)
             {
                 ShopSlotUpgrades shopSlotUpgrades = Instantiate(upgradeSlotPrefab, upgradesContainer).GetComponent<ShopSlotUpgrades>();
@@ -82,5 +87,17 @@ public class ShopManager : MonoBehaviour
     public void Back()
     {
         SceneManagement.Load("MainMenu");
+    }
+
+    public static void CheckForAchievements()
+    {
+        if(PlayerDataManager.PlayerData.UnlockedUpgrades.Count == Instance.upgradesCount)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_godly);
+        }
+        if (PlayerDataManager.PlayerData.UnlockedPowerUps.Count == Instance.powerUpsCount)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_unstoppable);
+        }
     }
 }

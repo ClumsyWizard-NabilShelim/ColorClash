@@ -13,6 +13,7 @@ public class SceneManagement : Persistant<SceneManagement>
     public static Action OnNewSceneLoaded;
     public static Action OnNewSceneLoadedCore;
     public static bool isGameScene;
+    public static bool isMainMenu;
 
     protected override void Awake()
     {
@@ -20,6 +21,7 @@ public class SceneManagement : Persistant<SceneManagement>
         animator = GetComponent<Animator>();
         animator.SetBool("Fade", false);
         isGameScene = SceneManager.GetActiveScene().name.Contains("Level_");
+        isMainMenu = SceneManager.GetActiveScene().name.Contains("MainMenu");
         audioManager = GetComponent<AudioManager>();
 
         Application.targetFrameRate = 60;
@@ -61,6 +63,7 @@ public class SceneManagement : Persistant<SceneManagement>
             yield return null;
         }
         isGameScene = levelString.Contains("Level_");
+        isMainMenu = levelString.Contains("MainMenu");
 
         if (!isGameScene)
             audioManager.Play("Background");

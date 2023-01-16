@@ -57,6 +57,29 @@ public class ArenaSlot : MonoBehaviour
                 audioManager.Play("BuyClick");
                 PlayerDataManager.PlayerData.UseCoin(cost);
                 PlayerDataManager.PlayerData.AddArena(arenaID);
+
+                if(arenaID == "Clouds")
+                {
+                    AchievementManager.UnlockAchievement(GPGSIds.achievement_peace);
+                }
+                else if (arenaID == "Arctic")
+                {
+                    AchievementManager.UnlockAchievement(GPGSIds.achievement_freezing);
+                }
+                else if (arenaID == "LavaLand")
+                {
+                    AchievementManager.UnlockAchievement(GPGSIds.achievement_warmth);
+                }
+                else if (arenaID == "Space")
+                {
+                    AchievementManager.UnlockAchievement(GPGSIds.achievement_void);
+                }
+
+                if(PlayerDataManager.PlayerData.UnlockedArenas.Count == 5)
+                {
+                    AchievementManager.UnlockAchievement(GPGSIds.achievement_traveller);
+                }
+
                 Initialize(data);
             }
             else

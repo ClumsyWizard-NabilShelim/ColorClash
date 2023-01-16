@@ -180,10 +180,10 @@ public class PlayerManager : Singleton<PlayerManager>
         currentSecond = 0.0f;
         timerText.text = string.Format("{0:00}", currentMinute) + ":" + string.Format("{0:00}", currentSecond);
         audioManager.Stop("TimeRunningOut");
-        GameOverMenu.Over(Mathf.CeilToInt(currentScore), coin, currentScore > PlayerDataManager.PlayerData.HighScore);
         PlayerDataManager.PlayerData.AddCoin(coin);
         PlayerDataManager.PlayerData.CheckAndSetHighScore(Mathf.CeilToInt(currentScore));
         PlayerDataManager.Save();
+        GameOverMenu.Over(Mathf.CeilToInt(currentScore), coin, currentScore > PlayerDataManager.PlayerData.HighScore);
     }
 
     public static void SliceMissed()

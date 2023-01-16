@@ -16,7 +16,7 @@ public class ObjectSlicer : Singleton<ObjectSlicer>
     private Blade[] blades;
     [SerializeField] private int minSliceChainCount;
     [SerializeField] private Animator wrongSliceMarker;
-    
+    public static int EnemiesKilled { get; private set; }
 
     private void Start()
     {
@@ -154,6 +154,9 @@ public class ObjectSlicer : Singleton<ObjectSlicer>
 
     private void OnSlice(SliceableObject sliceableObject)
     {
+        if (sliceableObject.Type == SliceableObjectType.Enemy)
+            EnemiesKilled++;
+
         slicedObjects.Add(sliceableObject);
     }
 

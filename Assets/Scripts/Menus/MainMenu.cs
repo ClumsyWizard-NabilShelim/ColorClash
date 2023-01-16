@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ClumsyWizard.Utilities;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 public class MainMenu : MonoBehaviour

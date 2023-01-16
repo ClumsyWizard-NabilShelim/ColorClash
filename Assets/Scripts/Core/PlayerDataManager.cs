@@ -8,6 +8,7 @@ public class PlayerData
 {
     public int HighScore;
     public int Coin;
+
     public ClumsyDictionary<string, int> UnlockedPowerUps;
     public ClumsyDictionary<string, int> UnlockedUpgrades;
     public List<string> EquippedPowerUps;
@@ -38,6 +39,7 @@ public class PlayerData
     public void AddCoin(int amount)
     {
         Coin += amount;
+        PlayerDataManager.PlayerAchievements.AddNetCoin(amount);
         HUD.UpdateUI();
         PlayerDataManager.Save();
     }
@@ -132,10 +134,34 @@ public class PlayerStats
     }
 }
 
+[System.Serializable]
+public class PlayerAchievements
+{
+    public int NetCoin;
+    public int EnemiesKilled;
+    public PlayerAchievements(int netCoin, int enemiesKilled)
+    {
+        NetCoin = netCoin;
+        EnemiesKilled = enemiesKilled;
+    }
+
+    public void AddNetCoin(int amount)
+    {
+        NetCoin += amount;
+        PlayerDataManager.Save();
+    }
+    public void AddEnemiesKilled(int amount)
+    {
+        EnemiesKilled += amount;
+        PlayerDataManager.Save();
+    }
+}
+
 public class PlayerDataManager : Persistant<PlayerDataManager>
 {
     public static PlayerData PlayerData { get; private set; }
     public static PlayerStats PlayerStats { get; private set; }
+    public static PlayerAchievements PlayerAchievements { get; private set; }
 
     [Header("Starting Data")]
     [SerializeField] private int startingCoin;
@@ -162,6 +188,7 @@ public class PlayerDataManager : Persistant<PlayerDataManager>
     {
         SaveLoadManager.SaveData(PlayerData, SaveLoadKey.PlayerData);
         SaveLoadManager.SaveData(PlayerStats, SaveLoadKey.PlayerStats);
+        SaveLoadManager.SaveData(PlayerAchievements, SaveLoadKey.PlayerAchievements);
     }
 
     private void Load()
@@ -186,6 +213,17 @@ public class PlayerDataManager : Persistant<PlayerDataManager>
             else
             {
                 PlayerStats = data;
+            }
+        });
+        SaveLoadManager.LoadData(SaveLoadKey.PlayerAchievements, (PlayerAchievements data) =>
+        {
+            if (data == null)
+            {
+                PlayerAchievements = new PlayerAchievements(0, 0);
+            }
+            else
+            {
+                PlayerAchievements = data;
             }
         });
     }

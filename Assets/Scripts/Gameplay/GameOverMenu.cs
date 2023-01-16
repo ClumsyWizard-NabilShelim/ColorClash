@@ -53,6 +53,9 @@ public class GameOverMenu : Singleton<GameOverMenu>
         Instance.scoreText.text = score.ToString();
         Instance.coinText.text = coin.ToString();
         Instance.highScoreText.SetActive(isHighScore);
+
+        Instance.AchievementCheck(coin);
+        GPGSManager.PostToLeaderBoard(score);
     }
 
     public void MainMenu()
@@ -77,6 +80,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
                 {
                     PlayerDataManager.PlayerData.AddCoin(coinEarned);
                     Instance.coinText.text = (coinEarned * 2).ToString();
+                    Instance.AchievementCheck(coinEarned * 2);
                     PlayerDataManager.Save();
                 },
                 () =>
@@ -98,6 +102,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
                 {
                     Instance.highScoreText.SetActive((scoreEarned * 2) > PlayerDataManager.PlayerData.HighScore);
                     Instance.scoreText.text = (scoreEarned * 2).ToString();
+                    GPGSManager.PostToLeaderBoard(scoreEarned * 2);
                     PlayerDataManager.PlayerData.CheckAndSetHighScore(Mathf.CeilToInt(scoreEarned * 2));
                     PlayerDataManager.Save();
                 },
@@ -123,6 +128,46 @@ public class GameOverMenu : Singleton<GameOverMenu>
         {
             SaveLoadManager.DecrementInt(AdsSaveTags.LevelChangeCoolDown.ToString(), 1);
             onButtonCallback?.Invoke();
+        }
+    }
+
+    private void AchievementCheck(int coin)
+    {
+        if (coin >= 500)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_money_craze);
+        }
+        if (coin >= 2000)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_money_monster);
+        }
+        if (coin >= 4000)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_money_maniac);
+        }
+
+        if (PlayerDataManager.PlayerAchievements.NetCoin >= 50000)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_loaded);
+        }
+
+        PlayerDataManager.PlayerAchievements.AddEnemiesKilled(ObjectSlicer.EnemiesKilled);
+
+        if (PlayerDataManager.PlayerAchievements.EnemiesKilled >= 50)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_rookie);
+        }
+        if (PlayerDataManager.PlayerAchievements.EnemiesKilled >= 100)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_pro);
+        }
+        if (PlayerDataManager.PlayerAchievements.EnemiesKilled >= 200)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_ninja);
+        }
+        if (PlayerDataManager.PlayerAchievements.EnemiesKilled >= 300)
+        {
+            AchievementManager.UnlockAchievement(GPGSIds.achievement_maniac);
         }
     }
 }
