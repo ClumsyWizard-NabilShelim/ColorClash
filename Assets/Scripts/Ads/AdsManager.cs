@@ -24,6 +24,7 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
 
     private bool isInitialized;
     private Action onInitialied;
+    public static bool AdsLoadFailed { get; private set; }
 
     [SerializeField] private ClumsyDictionary<string, AdType> adIDs;
     [SerializeField] private ClumsyDictionary<AdType, AdContainer> ads;
@@ -44,7 +45,7 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
             else
                 testMode = true; 
 #endif
-
+        AdsLoadFailed = true;
         Advertisement.Initialize(gameID, testMode, this);
 
         foreach (AdType type in ads.Keys)
@@ -60,6 +61,9 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
                 ((BannerAds)ads[AdType.Banner]).Hide();
             else
                 ((BannerAds)ads[AdType.Banner]).Show();
+
+            if (AdsLoadFailed)
+                Advertisement.Initialize(gameID, testMode, this);
         };
     }
 
@@ -67,12 +71,14 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
     public void OnInitializationComplete()
     {
         isInitialized = true;
+        AdsLoadFailed = false;
         onInitialied?.Invoke();
     }
 
     public void OnInitializationFailed(UnityAdsInitializationError error, string message)
     {
         isInitialized = false;
+        AdsLoadFailed = true;
         Debug.Log($"Unity Ads Initialization Failed: {error} - {message}");
     }
 
@@ -91,6 +97,7 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
     //Showing
     public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
     {
+        ads[adIDs[placementId]].OnAdFailedToLoad();
         Debug.Log($"Error showing Ad Unit {placementId}: {error} - {message}");
     }
     public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
@@ -112,11 +119,18 @@ public class AdsManager : Persistant<AdsManager>, IUnityAdsInitializationListene
     }
 
     //Getters
-    public static void GetAd<T>(AdType type, Action<T> callback) where T : AdContainer
+    public static void GetAd<T>(AdType type, Action<T> callback, Action onAdFailedToLoad) where T : AdContainer
     {
+        if (AdsLoadFailed)
+        {
+            onAdFailedToLoad?.Invoke();
+            Debug.Log("Failed to load ads, calling onAdFailedToLoad");
+            return;
+        }
+
         if (!Instance.isInitialized)
         {
-            Instance.onInitialied += () => GetAd(type, callback);
+            Instance.onInitialied += () => GetAd(type, callback, onAdFailedToLoad);
         }
         else
         {

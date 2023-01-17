@@ -33,7 +33,7 @@ public class ShopManager : Singleton<ShopManager>
                 ad.Show();
             },
             UnityEngine.Advertisements.BannerPosition.BOTTOM_CENTER);
-        });
+        }, null);
     }
 
     private void SetupPowerUpShop()

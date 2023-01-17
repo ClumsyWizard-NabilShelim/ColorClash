@@ -28,7 +28,7 @@ public class ArenaManager : MonoBehaviour
                 ad.Show();
             },
             UnityEngine.Advertisements.BannerPosition.BOTTOM_CENTER);
-        });
+        }, null);
     }
     
     public void Back()

@@ -1,5 +1,7 @@
 <dependencies>
   <packages>
+    <package>com.google.android.play:app-update:2.0.0</package>
+    <package>com.google.android.play:core-common:2.0.0</package>
     <package>com.google.games:gpgs-plugin-support:0.11.01</package>
     <package>com.unity3d.mediation:mediation-sdk:[1.0,2.0[</package>
     <package>com.unity3d.mediation:unityads-adapter:[1.0,2.0[</package>
@@ -43,6 +45,8 @@
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-games-v2-17.0.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-nearby-18.3.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-tasks-18.0.2.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.play.app-update-2.0.1.aar</file>
+    <file>Assets/Plugins/Android/com.google.android.play.core-common-2.0.2.aar</file>
     <file>Assets/Plugins/Android/com.google.games.gpgs-plugin-support-0.11.01.aar</file>
     <file>Assets/Plugins/Android/com.google.protobuf.protobuf-javalite-3.19.3.jar</file>
     <file>Assets/Plugins/Android/com.squareup.okhttp3.okhttp-4.6.0.jar</file>

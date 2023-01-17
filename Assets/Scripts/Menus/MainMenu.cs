@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
             {
                 Application.Quit();
             });
-        });
+        }, null);
 
         AdsManager.GetAd(AdType.Banner, (BannerAds ad) =>
         {
@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour
                 ad.Show();
             }, 
             UnityEngine.Advertisements.BannerPosition.BOTTOM_CENTER);
-        });
+        }, null);
     }
 
     public void Play()
@@ -48,6 +48,9 @@ public class MainMenu : MonoBehaviour
         AdsManager.GetAd(AdType.Interstitial, (InterstitialAds ad) =>
         {
             ad.Show();
+        }, () =>
+        {
+            Application.Quit();
         });
     }
 }

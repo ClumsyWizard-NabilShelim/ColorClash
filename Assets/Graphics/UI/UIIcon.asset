@@ -75,6 +75,18 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: UIIcon_5
     m_HashCode: -637074787
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 6
+    m_Scale: 1
+    m_Name: UIIcon_6
+    m_HashCode: -637074786
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 7
+    m_Scale: 1
+    m_Name: UIIcon_7
+    m_HashCode: -637074785
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -166,6 +178,36 @@ MonoBehaviour:
     m_Scale: 1.3
     m_AtlasIndex: 0
     sprite: {fileID: 1241729974, guid: f50b3318d9614ec448fa85249559629d, type: 3}
+  - m_Index: 6
+    m_Metrics:
+      m_Width: 210
+      m_Height: 210
+      m_HorizontalBearingX: -105
+      m_HorizontalBearingY: 105
+      m_HorizontalAdvance: 210
+    m_GlyphRect:
+      m_X: 270
+      m_Y: 211
+      m_Width: 210
+      m_Height: 210
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 208176835, guid: f50b3318d9614ec448fa85249559629d, type: 3}
+  - m_Index: 7
+    m_Metrics:
+      m_Width: 265
+      m_Height: 198
+      m_HorizontalBearingX: -20
+      m_HorizontalBearingY: 180
+      m_HorizontalAdvance: 265
+    m_GlyphRect:
+      m_X: 575
+      m_Y: 206
+      m_Width: 265
+      m_Height: 198
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -1579688718, guid: f50b3318d9614ec448fa85249559629d, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []
 --- !u!21 &4966625381670425803

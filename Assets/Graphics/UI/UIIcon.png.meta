@@ -262,7 +262,7 @@ TextureImporter:
         width: 210
         height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,6 +270,27 @@ TextureImporter:
       bones: []
       spriteID: 0f28f4b8e27978844b236a0094c91fc7
       internalID: 208176835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UIIcon_7
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 206
+        width: 265
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934a1e455588fc14796edf7d9c229eb5
+      internalID: -1579688718
       vertices: []
       indices: 
       edges: []
@@ -291,6 +312,8 @@ TextureImporter:
       UIIcon_2: 1095847721
       UIIcon_1: -1427085457
       UIIcon_3: 1658720789
+      UIIcon_8: 1600212228
+      UIIcon_7: -1579688718
       UIIcon_4: 1642509187
   spritePackingTag: 
   pSDRemoveMatte: 0

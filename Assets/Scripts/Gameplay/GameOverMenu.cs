@@ -33,7 +33,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
                 Instance.doubleCoinButton.interactable = true;
                 Instance.doubleScoreButton.interactable = true;
             });
-        });
+        }, null);
 
         AdsManager.GetAd(AdType.Interstitial, (InterstitialAds ad) =>
         {
@@ -41,7 +41,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
             {
                 SaveLoadManager.SetInt(AdsSaveTags.LevelChangeCoolDown.ToString(), AdsManager.InterstitialADCooldown + 1);
             });
-        });
+        }, null);
     }
 
     public static void Over(int score, int coin, bool isHighScore)
@@ -89,7 +89,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
                     doubleScoreButton.interactable = true;
                 }
             );
-        });
+        }, null);
     }
     public void DoubleScore()
     {
@@ -112,7 +112,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
                     doubleScoreButton.interactable = true;
                 }
             );
-        });
+        }, null);
     }
 
     private void DisplayAd(Action onButtonCallback)
@@ -122,7 +122,7 @@ public class GameOverMenu : Singleton<GameOverMenu>
             AdsManager.GetAd(AdType.Interstitial, (InterstitialAds ad) =>
             {
                 ad.Show();
-            });
+            }, onButtonCallback);
         }
         else
         {
